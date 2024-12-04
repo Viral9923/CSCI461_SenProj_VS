@@ -1,0 +1,34 @@
+{
+  "name": "personal_finance_mgmt_system",
+  "version": "1.0.0",
+  "description": "finance tracker web app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\" "
+  },
+  "author": "Viral Shah",
+  "license": "ISC",
+  "dependencies": {
+    "antd": "^5.22.2",
+    "bcrypt": "^5.1.1",
+    "chart.js": "^4.4.7",
+    "colors": "^1.4.0",
+    "concurrently": "^9.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "express-validator": "^7.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "jspdf": "^2.5.2",
+    "jspdf-autotable": "^3.8.4",
+    "moment": "^2.30.1",
+    "mongoose": "^8.7.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.7",
+    "react-chartjs-2": "^5.2.0"
+  }
+}

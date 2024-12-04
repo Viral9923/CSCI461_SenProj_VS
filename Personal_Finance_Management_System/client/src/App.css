@@ -1,0 +1,278 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body { 
+  height: 100%;
+  margin: 0;
+}
+
+.main-title {
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  color: #2619e4;
+  font-size: 2.8em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  min-height: 72vh;
+  background-color: #568263;
+  overflow: hidden;
+}
+
+.data-table {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.analytics {
+  flex: 1;
+  width: 100%;
+  margin: 10px;
+  overflow: auto;
+}
+
+.frequency-filters, .type-filters {
+  margin-right: 20px;
+}
+
+.switch-icons, .active-icon {
+  display: flex;
+  align-items: center;
+  color: orangered;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.btn {
+  margin-left: 10px;
+}
+
+/* Login & Register CSS */
+.auth-container {
+  display: flex;
+  height: 100vh;
+}
+
+.image-column {
+  flex: 1;
+  background-color: #f0f2f5;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-column img {
+  width: 100%;
+  height: 888px;
+  object-fit: cover;
+}
+
+.form-column {
+  flex: 1;
+  display: flex;
+  height: 888px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #eae2b7;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-form, .register-form {
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 40px;
+}
+
+.login-form h1, .register-form h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.form-column .ant-form {
+  width: 100%;
+  max-width: 400px;
+}
+
+.ant-form-item {
+  margin-bottom: 20px;
+}
+
+.ant-input {
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+}
+
+.ant-input:focus {
+  border-color: #40a9ff;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.form-column h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form-column .ant-form-item-label > label {
+  color: #555;
+}
+
+.register-link {
+  text-decoration: none;
+  font-size: 17px;
+  font-family: "Times New Roman", Times, serif;
+  color: green;
+}
+
+.login-link {
+  text-decoration: none;
+  font-size: 17px;
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(25, 115, 199);
+}
+/* -------- */
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px darkgray;
+  background-color: #b1e8be;
+}
+
+/* icons */
+.anticon svg {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.inactive-icon {
+  color: black;
+}
+
+.btn-primary {
+  background-color: #83e6e3;
+  color: black;
+}
+
+.btn-success {
+  background-color: #6cc551;
+  color: white;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-footer .btn-success {
+  margin-top: 20px;
+}
+
+/* Analytics CSS */
+.analytics-title {
+  text-align: center;
+  border: 1px solid cyan;
+  border-radius: 2px;
+  padding: 5px;
+  color: cyan;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -15px;
+}
+
+.col-md-4 {
+  flex: 0 0 32%;
+  max-width: 32%;
+  padding: 0 15px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.card-header {
+  background-color: #fcbf49;
+  color: black;
+  padding: 10px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  font-weight: bold;
+}
+
+.card-body {
+  padding: 15px;
+  background-color: #eae2b7;
+}
+
+.text-success {
+  color: #28a745;
+}
+
+.text-danger {
+  color: #dc3545;
+}
+
+h4 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+h5 {
+  margin: 10px 0;
+}
+
+.mx-2 {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.progress {
+  height: 20px;
+  border-radius: 5px;
+  background-color: #568263;
+}
+
+.progress .ant-progress-circle {
+  display: inline-block;
+}
+
+.edit-icon {
+  color: #2619e4;
+}
+
+.delete-icon {
+  color: #dc3545;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 10px;
+}
